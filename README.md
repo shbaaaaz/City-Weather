@@ -18,34 +18,38 @@ Welcome to the Weather App, a simple yet intuitive application that allows users
 - React.js
 - Jest (for testing)
 - react-testing-library (for testing)
-- OpenWeather API
-- Unsplash API
+- OpenWeather API (https://openweathermap.org)
+- Unsplash API (https://unsplash.com)
 - localStorage
 
 ## Installation and Setup
 
 To run this project locally, follow these steps:
 
-1.  Clone the repository:
+### 1. Clone the repository:
 
     ```bash
     git clone https://github.com/shbaaaaz/City-Weather.git
 
     ```
 
-2.  Navigate to the project directory:
+### 2. Navigate to the project directory:
 
     ```bash
     cd City-Weather
     ```
 
-3.  Install dependencies:
+### 3. Install dependencies:
 
     ```bash
     npm install
     ```
 
-4.  Get API Keys: - Obtain API keys from OpenWeather and Unsplash. - Create a .env file in the root directory. - Add your API keys:
+### 4. Get API Keys:
+
+    - Obtain API keys from OpenWeather and Unsplash.
+    - Create a .env file in the root directory.
+    - Add your API keys and the below details to the .env file.
 
     ```bash
         REACT_APP_WEATHER_API_TOKEN=your_openweather_api_key
@@ -63,6 +67,46 @@ To run this project locally, follow these steps:
 
 6.  Open your browser and navigate to http://localhost:3000 to view the Weather App.
 
+## Folder Structure
+
+```
+📦src
+ ┣ 📂components # Contains all the custom components
+ ┃ ┣ 📂ErrorContainer
+ ┃ ┃ ┣ 📜ErrorContainer.jsx
+ ┃ ┃ ┗ 📜ErrorContainer.module.css
+ ┃ ┣ 📂FavouriteCity
+ ┃ ┃ ┣ 📜FavouriteCity.jsx
+ ┃ ┃ ┗ 📜FavouriteCity.module.css
+ ┃ ┣ 📂ImageContainer
+ ┃ ┃ ┣ 📜ImageContainer.jsx
+ ┃ ┃ ┗ 📜ImageContainer.module.css
+ ┃ ┣ 📂Loader
+ ┃ ┃ ┣ 📜Loader.jsx
+ ┃ ┃ ┗ 📜Loader.module.css
+ ┃ ┣ 📂SearchForm
+ ┃ ┃ ┣ 📜SearchForm.jsx
+ ┃ ┃ ┣ 📜SearchForm.module.css
+ ┃ ┃ ┗ 📜SearchForm.test.js
+ ┃ ┗ 📂WeatherInfo
+ ┃ ┃ ┣ 📜WeatherInfo.jsx
+ ┃ ┃ ┣ 📜WeatherInfo.module.css
+ ┃ ┃ ┗ 📜WeatherInfo.test.js
+ ┣ 📂context # Contains context providers to be consumed by the different components
+ ┃ ┗ 📜fav-cities-context.js
+ ┣ 📂helper # Contains helper functions for different purpose
+ ┃ ┣ 📜geoLocationAPI.js
+ ┃ ┣ 📜imageAPI.js
+ ┃ ┗ 📜weatherAPI.js
+ ┣ 📂hooks # Contains custom hooks used in the project
+ ┃ ┣ 📜useCityImage.js
+ ┃ ┗ 📜useWeatherData.js
+ ┣ 📜App.js # Entry point of the application
+ ┣ 📜App.module.css
+ ┣ 📜index.css
+ ┗ 📜index.js
+```
+
 ## Usage
 
 - Allow location permission to get weather details of your current location.
@@ -74,10 +118,14 @@ To run this project locally, follow these steps:
 The project includes test cases written using Jest and react-testing-library.
 To run the tests, use the below command.
 
-    ```bash
+```bash
     npm test
-    ```
+```
 
 ## Feedback / Suggestions
 
 Please feel free to reach out to me in case you have any feedback / suggestion or any query regarding this project.
+
+Contact: https://www.shahbazkhan.in/contact
+
+## Screenshots
