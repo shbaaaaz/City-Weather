@@ -2,6 +2,8 @@
 
 Welcome to the City Weather App, a simple yet intuitive application that allows users to check the weather of their current location or any city around the world. This app provides weather information and stunning images based on the city searched by the user.
 
+Live Link: https://city-weather-by-shahbaz.netlify.app
+
 ## Features
 
 - Detects user's location and displays current weather information.
