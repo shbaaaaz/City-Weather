@@ -28,22 +28,21 @@ To run this project locally, follow these steps:
 
 ### 1. Clone the repository:
 
-    ```bash
-        git clone https://github.com/shbaaaaz/City-Weather.git
-
-    ```
+```bash
+    git clone https://github.com/shbaaaaz/City-Weather.git
+```
 
 ### 2. Navigate to the project directory:
 
-    ```bash
-        cd City-Weather
-    ```
+```bash
+    cd City-Weather
+```
 
 ### 3. Install dependencies:
 
-    ```bash
-        npm install
-    ```
+```bash
+    npm install
+```
 
 ### 4. Get API Keys:
 
@@ -51,19 +50,19 @@ To run this project locally, follow these steps:
 - Create a .env file in the root directory.
 - Add your API keys and the below details to the .env file.
 
-  ```bash
-      REACT_APP_WEATHER_API_TOKEN=your_openweather_api_key
-      REACT_APP_WEATHER_API_BASE_URL=https://api.openweathermap.org/data/2.5/weather
-      REACT_APP_WEATHER_IMAGE_BASE_URL=https://openweathermap.org/img/wn
-      REACT_APP_UNSPLASH_API_KEY=your_unsplash_api_key
-      REACT_APP_USPLASH_API_BASE_URL=https://api.unsplash.com/search/photos
-  ```
+```bash
+    REACT_APP_WEATHER_API_TOKEN=your_openweather_api_key
+    REACT_APP_WEATHER_API_BASE_URL=https://api.openweathermap.org/data/2.5/weather
+    REACT_APP_WEATHER_IMAGE_BASE_URL=https://openweathermap.org/img/wn
+    REACT_APP_UNSPLASH_API_KEY=your_unsplash_api_key
+    REACT_APP_USPLASH_API_BASE_URL=https://api.unsplash.com/search/photos
+```
 
 5.  Start the development server:
 
-    ```bash
-        npm start
-    ```
+```bash
+    npm start
+```
 
 6.  Open your browser and navigate to http://localhost:3000 to view the Weather App.
 
