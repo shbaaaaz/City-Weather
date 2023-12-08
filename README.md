@@ -60,13 +60,13 @@ To run this project locally, follow these steps:
     REACT_APP_USPLASH_API_BASE_URL=https://api.unsplash.com/search/photos
 ```
 
-5.  Start the development server:
+### 5. Start the development server:
 
 ```bash
     npm start
 ```
 
-6.  Open your browser and navigate to http://localhost:3000 to view the Weather App.
+### 6. Open your browser and navigate to http://localhost:3000 to view the Weather App.
 
 ## Folder Structure
 
@@ -136,6 +136,3 @@ Contact: https://www.shahbazkhan.in/contact
 <img width="941" alt="image" src="https://github.com/shbaaaaz/City-Weather/assets/52371453/d59c20cf-0edf-4316-aebf-161b0f1a24ff">
 
 <img width="941" alt="image" src="https://github.com/shbaaaaz/City-Weather/assets/52371453/33cfa836-346f-4506-bfc6-e5897182f969">
-
-
-
