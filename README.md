@@ -1,6 +1,6 @@
-# Weather App
+# City Weather App
 
-Welcome to the Weather App, a simple yet intuitive application that allows users to check the weather of their current location or any city around the world. This app provides weather information and stunning images based on the city searched by the user.
+Welcome to the City Weather App, a simple yet intuitive application that allows users to check the weather of their current location or any city around the world. This app provides weather information and stunning images based on the city searched by the user.
 
 ## Features
 
@@ -128,3 +128,12 @@ Please feel free to reach out to me in case you have any feedback / suggestion o
 Contact: https://www.shahbazkhan.in/contact
 
 ## Screenshots
+
+<img width="941" alt="image" src="https://github.com/shbaaaaz/City-Weather/assets/52371453/a2fc9d42-61d6-4feb-8331-82936495cb93">
+
+<img width="941" alt="image" src="https://github.com/shbaaaaz/City-Weather/assets/52371453/d59c20cf-0edf-4316-aebf-161b0f1a24ff">
+
+<img width="941" alt="image" src="https://github.com/shbaaaaz/City-Weather/assets/52371453/33cfa836-346f-4506-bfc6-e5897182f969">
+
+
+
