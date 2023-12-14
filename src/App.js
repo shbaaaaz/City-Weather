@@ -8,6 +8,7 @@ import { getUserLocation } from './helper/geoLocationAPI'
 import { useWeatherData } from './hooks/useWeatherData'
 import Loader from './components/Loader/Loader'
 import ErrorContainer from './components/ErrorContainer/ErrorContainer'
+import { DEFAULT_CITY, NOT_FOUND_CITY } from './utils/constant'
 
 function App() {
   const [coordinates, setCoordinates] = useState(null)
@@ -22,7 +23,7 @@ function App() {
         setCoordinates(fetchedLocation)
       } catch (error) {
         // set default location in case of error (including user's permission rejection)
-        setCity('Frankfurt')
+        setCity(DEFAULT_CITY)
       }
     }
     fetchUserLocation()
@@ -34,7 +35,7 @@ function App() {
 
   return (
     <div className={styles.app}>
-      <ImageContainer city={error ? 'UNKNOWN' : weatherData?.name} />
+      <ImageContainer city={error ? NOT_FOUND_CITY : weatherData?.name} />
       <div className={styles.container}>
         {error && <ErrorContainer>{error}</ErrorContainer>}
         {isLoading && <Loader />}

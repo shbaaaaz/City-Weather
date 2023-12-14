@@ -6,16 +6,18 @@ import { useContext } from 'react'
 import { FavCitiesContext } from '../../context/fav-cities-context'
 import { useCityImage } from '../../hooks/useCityImage'
 import Loader from '../Loader/Loader'
+import {
+  DEFAULT_CITY,
+  FALLBACK_IMAGE_URL,
+  NOT_FOUND_CITY,
+} from '../../utils/constant'
 
-const ImageContainer = ({ city = 'Frankfurt' }) => {
+const ImageContainer = ({ city = DEFAULT_CITY }) => {
   const { imageURL, error, isLoading } = useCityImage(city)
   const { favCities, addToFavCities, deleteFromFavCities } =
     useContext(FavCitiesContext)
   const [isFavouriteCity, setIsFavouriteCity] = useState(false)
   const [starLimitReached, setStarLimitReached] = useState(false)
-
-  const fallbackImageURL =
-    'https://images.unsplash.com/photo-1502759683299-cdcd6974244f?h=220&w=440&auto=format&fit=crop&q=60'
 
   // Check if the current city is favourite and if there is any space left in the favourite cities stack
   useEffect(() => {
@@ -40,12 +42,12 @@ const ImageContainer = ({ city = 'Frankfurt' }) => {
       {isLoading && <Loader />}
       {!isLoading && (
         <img
-          src={imageURL || fallbackImageURL}
+          src={imageURL || FALLBACK_IMAGE_URL}
           alt={city}
           className={styles.responsiveImage}
         />
       )}
-      {city !== 'UNKNOWN' && (
+      {city !== NOT_FOUND_CITY && (
         <div className={styles.cityName}>
           <IoLocationSharp className={styles.locationIcon} />
           <h1>{city.toUpperCase()}</h1>
